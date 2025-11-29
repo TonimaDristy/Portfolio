@@ -46,20 +46,52 @@
             </p>
 
             <div class="tab-titles">
-              <p class="tab-links active-link">Skills</p>
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
 
-              <p class="tab-links">Education</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
             </div>
-            <div class="tab-contents">
+            <!-- skill -->
+            <div class="tab-contents active-tab" id="Skills">
               <ul>
                 <li><span>CSE</span><br />Designing Web page</li>
                 <li><span>Web Development</span><br />Designing Web page</li>
                 <li><span>Backend Development</span><br />Building</li>
               </ul>
             </div>
+            <!-- education -->
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>2022-2025</span><br />Undergraduate at AIUB</li>
+                <li>
+                  <span>2020</span><br />HSC from Police lines school and
+                  college, Rangpur
+                </li>
+                <li>
+                  <span>2018</span><br />SSC from Setabgonj Ideal Academy,
+                  Dinajpur
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>
