@@ -419,8 +419,16 @@ form .btn2 {
         background-image: url(Images/Phone-Background.png.jpg);
     }
 
+    /* Move header text lower on phone screens */
+    .header-text {
+        margin-top: 55%;
+        /* increase this value to push text further down */
+    }
 
-
+    .header-text h1 {
+        font-size: 40px;
+        /* optional: make text smaller on phone */
+    }
 }
 
 .hidden-work {
