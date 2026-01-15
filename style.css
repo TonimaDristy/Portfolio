@@ -390,6 +390,29 @@ form .btn2 {
 
 }
 
+.service-text {
+    overflow: hidden;
+    height: 7em;
+    /* ~3 lines */
+    line-height: 1.5em;
+    /* 1.5em per line */
+    transition: height 0.3s ease;
+}
+
+.service-text.expanded {
+    height: auto;
+    /* expands to show full text */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0e2fd2;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
 /* ---small screen--- */
 @media only screen and (max-width:600px) {
     #header {
@@ -397,4 +420,9 @@ form .btn2 {
     }
 
 
+
+}
+
+.hidden-work {
+    display: none;
 }
