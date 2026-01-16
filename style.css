@@ -445,7 +445,7 @@ form .btn2 {
 
     /* Move header text lower on phone screens */
     .header-text {
-        margin-top: 80%;
+        margin-top: 95%;
         /* increase this value to push text further down */
     }
 
@@ -455,7 +455,7 @@ form .btn2 {
     }
 
     nav {
-        padding: 6px 5%;
+        padding: 12px 8%;
         /* smaller top/bottom padding */
         flex-wrap: nowrap;
         /* prevent items from wrapping */
