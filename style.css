@@ -23,6 +23,10 @@ body {
     background-image: url(Images/Background.jpg);
     background-size: cover;
     background-position: center;
+
+    border: 6px solid rgba(3, 0, 28, 0.85);
+    box-sizing: border-box;
+    padding-top: 70px;
 }
 
 
@@ -36,6 +40,17 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(3, 0, 28, 0.85);
+    /* semi-transparent */
+    padding: 5px 5%;
+    z-index: 1000;
+    backdrop-filter: blur(6px);
+
 }
 
 /* .logo {
@@ -49,7 +64,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(93, 93, 94);
+    color: rgb(175, 175, 193);
     text-decoration: none;
     font-size: 30px;
     position: relative;
@@ -60,12 +75,12 @@ nav ul li a {
 nav ul li a::after {
     content: '';
     width: 0%;
-    height: 8px;
-    background: rgb(120, 120, 121);
+    height: 6px;
+    background: rgb(175, 175, 193);
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 nav ul li a:hover::after {
@@ -73,7 +88,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-    margin-top: 18%;
+    margin-top: 30%;
     font-size: 30px;
 }
 
@@ -86,6 +101,12 @@ nav ul li a:hover::after {
     color: rgb(255, 255, 255);
 
 }
+
+.header-text p {
+    color: rgba(3, 0, 28, 0.85);
+    font-weight: 600;
+}
+
 
 /* ---------about ----------*/
 #about {
@@ -130,7 +151,7 @@ nav ul li a:hover::after {
 .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: rgb(221, 234, 237);
+    color: rgb(208, 224, 227);
 
 }
 
@@ -152,7 +173,7 @@ nav ul li a:hover::after {
     content: '';
     width: 0;
     height: 5px;
-    background: rgb(76, 190, 221);
+    background: rgb(65, 129, 181);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -170,7 +191,7 @@ nav ul li a:hover::after {
 
 /* skills */
 .tab-contents ul li span {
-    color: rgb(76, 152, 245);
+    color: rgb(65, 129, 181);
     font-size: 20px;
 }
 
@@ -196,7 +217,7 @@ nav ul li a:hover::after {
 
 
 .services-list div {
-    background: #646262;
+    background: #585656;
     padding: 40px;
     font-size: 18px;
     font-weight: 300;
@@ -218,14 +239,14 @@ nav ul li a:hover::after {
 
 .services-list div a {
     text-decoration: none;
-    color: blue;
-    font-size: 14px;
+    color: rgb(65, 129, 181);
+    font-size: 17px;
     margin-top: 20px;
     display: inline-block;
 }
 
 .services-list div:hover {
-    background: #034e8d;
+    background: rgba(42, 42, 61, 0.85);
     transform: translateY(-8px);
 }
 
@@ -247,6 +268,7 @@ nav ul li a:hover::after {
     border-radius: 18px;
     position: relative;
     overflow: hidden;
+    height: 310px;
 }
 
 .work img {
@@ -254,12 +276,14 @@ nav ul li a:hover::after {
     border-radius: 10px;
     display: block;
     transition: transform 0.3s;
+    height: 100%;
+    object-fit: cover;
 }
 
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(41, 41, 41, 0.6), #01339f);
+    background: linear-gradient(rgba(3, 0, 28, 0.85), #00030a);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -283,7 +307,7 @@ nav ul li a:hover::after {
 /* ---link--- */
 .layer a {
     margin-top: 10px;
-    color: blue;
+    color: rgb(140, 140, 146);
     text-decoration: none;
     font-size: 14px;
     line-height: 45px;
@@ -316,7 +340,7 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-    background: #0681e5;
+    background: #4897D3;
 }
 
 /* ------contact */
@@ -347,20 +371,20 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: blue;
+    color: rgb(34, 34, 197);
     display: inline-block;
     transition: transform 0.3s;
 }
 
 .social-icons a:hover {
-    color: #0681e5;
+    color: #3282c5;
     transform: translateY(-10px);
 
 }
 
 .btn.btn2 {
     display: inline-block;
-    background: #0681e5;
+    background: #3282c5;
 }
 
 .contact-right form {
