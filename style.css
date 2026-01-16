@@ -239,9 +239,9 @@ nav ul li a:hover::after {
 
 .services-list div a {
     text-decoration: none;
-    color: rgb(65, 129, 181);
-    font-size: 17px;
-    margin-top: 20px;
+    color: rgb(27, 27, 27);
+    font-size: 14px;
+    margin-top: 25px;
     display: inline-block;
 }
 
@@ -358,7 +358,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-    color: #0029cc;
+    color: rgb(34, 34, 197);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -445,7 +445,7 @@ form .btn2 {
 
     /* Move header text lower on phone screens */
     .header-text {
-        margin-top: 55%;
+        margin-top: 80%;
         /* increase this value to push text further down */
     }
 
@@ -453,8 +453,111 @@ form .btn2 {
         font-size: 40px;
         /* optional: make text smaller on phone */
     }
+
+    nav {
+        padding: 6px 5%;
+        /* smaller top/bottom padding */
+        flex-wrap: nowrap;
+        /* prevent items from wrapping */
+        justify-content: space-around;
+        /* spread items evenly */
+
+    }
+
+    nav ul li {
+        margin: 0 5px;
+        /* smaller spacing between links */
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        /* optional: smaller text for links */
+    }
+
+
+
 }
+
+/* Add border on hover for portfolio work images */
+.work:hover {
+    border: 3px solid rgb(65, 129, 181);
+    /* change color as you like */
+    border-radius: 18px;
+    /* matches the existing border radius */
+    transition: transform 0.3s, border 0.3s;
+    /* smooth transition */
+}
+
+
+.services-list div:hover {
+    background-color: rgba(42, 42, 61, 0.85);
+    /* corrected syntax */
+    transform: translateY(-8px);
+    border: 3px solid rgb(65, 129, 181);
+    /* border color */
+    transition: transform 0.3s, background-color 0.3s, border 0.3s;
+    /* smooth effect */
+    border-radius: 10px;
+    /* keep existing border radius */
+}
+
+
+
+
 
 .hidden-work {
     display: none;
+}
+
+
+
+
+.header-text h1 span {
+    background: linear-gradient(90deg, #000000, #ffffff);
+    /* dark left, light right */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    /* allows animation to move gradient */
+    animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+
+.read-more {
+    display: inline-block;
+    /* makes it behave like a box */
+    padding: 1px 6px;
+    /* space inside the box */
+    border: 2px solid rgb(33, 89, 134);
+    /* border color */
+    border-radius: 6px;
+    /* rounded corners */
+    background-color: rgba(65, 129, 181, 0.1);
+    /* light box background */
+    color: #336a97;
+    /* text color */
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+.read-more:hover {
+    background-color: #265276;
+    /* fill on hover */
+    color: white;
+    /* text color on hover */
+    transform: translateY(-2px);
+    /* slight hover lift */
 }
