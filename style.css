@@ -38,7 +38,7 @@ body {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 
     position: fixed;
@@ -47,9 +47,9 @@ nav {
     width: 100%;
     background: rgba(3, 0, 28, 0.85);
     /* semi-transparent */
-    padding: 5px 5%;
+    padding: -3px 5%;
     z-index: 1000;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(3px);
 
 }
 
@@ -61,6 +61,7 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+
 }
 
 nav ul li a {
@@ -445,33 +446,49 @@ form .btn2 {
 
     /* Move header text lower on phone screens */
     .header-text {
-        margin-top: 100%;
+        margin-top: 108%;
         /* increase this value to push text further down */
     }
 
     .header-text h1 {
-        font-size: 40px;
+        font-size: 20px;
         /* optional: make text smaller on phone */
     }
 
     nav {
-        padding: 10px 8%;
+        padding: 5px 3%;
         /* smaller top/bottom padding */
         flex-wrap: nowrap;
         /* prevent items from wrapping */
         justify-content: space-around;
         /* spread items evenly */
 
+        display: flex;
+        justify-content: center;
+        /* center horizontally */
+        align-items: center;
+
     }
 
+    nav ul {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+
     nav ul li {
-        margin: 0 5px;
+        padding: 2px 6px;
+        /* smaller box width */
+        font-size: 18px;
+        margin: 0px 2px;
         /* smaller spacing between links */
     }
 
     nav ul li a {
-        font-size: 20px;
-        /* optional: smaller text for links */
+        font-size: 18px;
+        padding: 1px 5px;
     }
 
 
@@ -542,9 +559,9 @@ form .btn2 {
     /* border color */
     border-radius: 6px;
     /* rounded corners */
-    background-color: rgba(65, 129, 181, 0.1);
+    background-color: rgba(189, 205, 217, 0.1);
     /* light box background */
-    color: #336a97;
+    color: rgb(33, 89, 134);
     /* text color */
     font-weight: bold;
     text-align: center;
@@ -554,10 +571,39 @@ form .btn2 {
 }
 
 .read-more:hover {
-    background-color: #265276;
+    background-color: rgb(33, 89, 134);
     /* fill on hover */
     color: white;
     /* text color on hover */
     transform: translateY(-2px);
     /* slight hover lift */
+}
+
+
+nav ul li a {
+    color: rgb(175, 175, 193);
+    text-decoration: none;
+
+    font-weight: bold;
+
+
+    border: 2px solid transparent;
+    border-radius: 8px;
+    line-height: 1.2;
+    transition: all 0.3s ease;
+}
+
+/* Remove underline effect */
+nav ul li a::after {
+    display: none;
+}
+
+/* Hover box effect */
+nav ul li a:hover {
+    background: rgba(65, 129, 181, 0.15);
+    border-color: rgb(65, 129, 181);
+    color: #ffffff;
+
+    box-shadow: 0 0 10px rgba(65, 129, 181, 0.5);
+    transform: translateY(-2px);
 }
