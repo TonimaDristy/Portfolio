@@ -561,7 +561,7 @@ form .btn2 {
     /* rounded corners */
     background-color: rgba(189, 205, 217, 0.1);
     /* light box background */
-    color: rgb(33, 89, 134);
+    color: rgb(42, 130, 201);
     /* text color */
     font-weight: bold;
     text-align: center;
@@ -571,7 +571,7 @@ form .btn2 {
 }
 
 .read-more:hover {
-    background-color: rgb(33, 89, 134);
+    background-color: rgb(41, 123, 189);
     /* fill on hover */
     color: white;
     /* text color on hover */
@@ -598,7 +598,8 @@ nav ul li a::after {
     display: none;
 }
 
-/* Hover box effect */
+/*glass effect on projesct
+ Hover box effect */
 nav ul li a:hover {
     background: rgba(65, 129, 181, 0.15);
     border-color: rgb(65, 129, 181);
@@ -606,4 +607,150 @@ nav ul li a:hover {
 
     box-shadow: 0 0 10px rgba(65, 129, 181, 0.5);
     transform: translateY(-2px);
+}
+
+.work {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.work:hover {
+    box-shadow: 0 0 20px rgba(65, 129, 181, 0.7);
+    transform: translateY(-6px);
+}
+
+.work img {
+    transition: transform 0.4s ease;
+}
+
+.work:hover img {
+    transform: scale(1.08);
+}
+
+
+/* VEIW PROJECT */
+
+.work {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* View Project badge (always visible) */
+.work::after {
+    content: "View Project";
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(52, 152, 198, 0.9);
+    color: white;
+    padding: 6px 14px;
+    font-size: 13px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+/* Hover effect */
+.work:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(65, 129, 181, 0.45);
+}
+
+/* Badge animation on hover */
+.work:hover::after {
+    background: rgb(65, 129, 181);
+    transform: translateY(-4px) scale(1.05);
+}
+
+/* Image zoom */
+.work img {
+    transition: transform 0.4s ease;
+}
+
+.work:hover img {
+    transform: scale(1.08);
+}
+
+/* Click feedback */
+.work:active {
+    transform: scale(0.97);
+}
+
+/*SEE MORE ARROW*/
+.services-list div a {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 23px;
+    padding: 6px 14px;
+    /* smaller padding */
+    background: rgba(38, 126, 177, 0.7);
+    /* soft blue */
+    color: #ffffff;
+    font-size: 13px;
+    /* slightly smaller text */
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 13px;
+    /* smaller pill shape */
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Subtle arrow */
+.services-list div a::after {
+    content: "→";
+    transition: transform 0.3s ease;
+    font-size: 11px;
+}
+
+/* Hover effect */
+.services-list div a:hover {
+    transform: translateY(-1px) scale(1.03);
+    background: rgba(13, 108, 152, 0.9);
+    box-shadow: 0 4px 12px rgba(52, 152, 198, 0.5);
+}
+
+/* Arrow movement */
+.services-list div a:hover::after {
+    transform: translateX(3px);
+}
+
+/* Click feedback */
+.services-list div a:active {
+    transform: scale(0.96);
+}
+
+
+.sub-title {
+    font-size: 60px;
+    /* keep existing size */
+    font-weight: 700;
+    /* make it bolder */
+    color: #d0e0e3;
+    /* slightly brighter for contrast */
+    letter-spacing: 1px;
+    /* optional: a little spacing for elegance */
+}
+
+.tab-titles .tab-links {
+    font-weight: 600;
+    /* a bit bolder than normal */
+    color: #cfdfff;
+    /* subtle light color */
+}
+
+.tab-titles .tab-links.active-link {
+    font-weight: 700;
+    /* emphasize active tab */
+    color: #4181b5;
+    /* blue highlight for active */
 }
