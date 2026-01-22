@@ -149,12 +149,12 @@ nav ul li a:hover::after {
 
 }
 
-.sub-title {
+/* .sub-title {
     font-size: 60px;
     font-weight: 600;
-    color: rgb(208, 224, 227);
+    color: rgb(15, 241, 38);
 
-}
+} */
 
 .tab-titles {
     display: flex;
@@ -170,16 +170,16 @@ nav ul li a:hover::after {
 }
 
 
-.tab-links::after {
+/* .tab-links::after {
     content: '';
     width: 0;
     height: 5px;
-    background: rgb(65, 129, 181);
+    background: rgb(181, 65, 104);
     position: absolute;
     left: 0;
     bottom: -8px;
     transition: 0, 5s;
-}
+} */
 
 .tab-links.active-link::after {
     width: 50%;
@@ -451,7 +451,7 @@ form .btn2 {
     }
 
     .header-text h1 {
-        font-size: 20px;
+        font-size: 21px;
         /* optional: make text smaller on phone */
     }
 
@@ -735,16 +735,17 @@ nav ul li a:hover {
     /* keep existing size */
     font-weight: 700;
     /* make it bolder */
-    color: #d0e0e3;
+    color: #ffffff;
     /* slightly brighter for contrast */
     letter-spacing: 1px;
     /* optional: a little spacing for elegance */
 }
 
+/* skill-education */
 .tab-titles .tab-links {
     font-weight: 600;
     /* a bit bolder than normal */
-    color: #cfdfff;
+    color: #ffffff;
     /* subtle light color */
 }
 
