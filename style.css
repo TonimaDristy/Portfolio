@@ -691,7 +691,7 @@ nav ul li a:hover {
     margin-top: 23px;
     padding: 6px 14px;
     /* smaller padding */
-    background: rgba(38, 126, 177, 0.7);
+    background: rgba(54, 152, 243, 0.7);
     /* soft blue */
     color: #ffffff;
     font-size: 13px;
@@ -716,7 +716,7 @@ nav ul li a:hover {
 .services-list div a:hover {
     transform: translateY(-1px) scale(1.03);
     background: rgba(13, 108, 152, 0.9);
-    box-shadow: 0 4px 12px rgba(52, 152, 198, 0.5);
+    box-shadow: 0 4px 12px rgba(254, 252, 253, 0.5);
 }
 
 /* Arrow movement */
