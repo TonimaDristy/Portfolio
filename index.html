@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="style.css" />
+    
+
     <script
       src="https://kit.fontawesome.com/4af66b9105.js"
       crossorigin="anonymous"
@@ -32,13 +34,55 @@
           </ul>
         </nav>
 
-        <div class="header-text">
+        <!-- <div class="header-text">
           
           <h1>Hi, I'm <br /><span>Tonima Islam Dristy</span></h1>
-          <p>CSE Undergraduate</p>
-        </div>
-      </div>
+<p>
+  CSE undergraduate passionate about Full-Stack Development, AI, Data Science, Machine Learning and Deep Learning.
+</p>
+<p>
+  I enjoy learning new technologies and growing as a developer.
+</p>
+
+        </div> -->
+
+        
+        <div class="header-flex">
+    <div class="header-text">
+        <h2 class="hero-intro">Hi, I am </h2>
+        <h1>Tonima Islam <span>Dristy</span></h1>
+        <h2>CSE Undergraduate</h2>
     </div>
+
+      <div class="intro-cards">
+    <div class="intro-card">
+        <h3>Tech Expertise</h3>
+        <p>
+            Experienced with React.js, Next.js, NestJS, HTML, CSS, JavaScript, Tailwind CSS, PostgreSQL, RESTful APIs, and Postman for building modern web applications.
+        </p>
+    </div>
+
+    <div class="intro-card">
+        <h3>AI & Data Science</h3>
+        <p>
+            Passionate about AI, Data Science, and Machine Learning, currently exploring AI agent development to create intelligent applications.
+        </p>
+    </div>
+
+    <div class="intro-card">
+        <h3>Creative Growth</h3>
+        <p>
+            Skilled in graphic design and continuously expanding knowledge in modern technologies and real-world projects to grow as a full-stack developer.
+        </p>
+    </div>
+</div>
+
+
+      </div>
+    </div> 
+    
+
+    
 
     <!-- ---------- ABOUT ---------- -->
     <div id="about">
@@ -64,7 +108,7 @@
               <ul>
                 <li>
                   <span>Web Development</span><br />
-                  Developed a full-stack university resource-sharing platform (UniShare) using Next.js, React.js, Nest.js, Node.js, PostgreSQL, and Tailwind CSS, featuring a responsive UI and role-based access.
+                  Developed a full-stack university resource-sharing platform (UniShare) using Next.js, React.js, Nest.js, Node.js, PostgreSQL, and Tailwind CSS, featuring a responsive UI and role-based access. Also built a school web application with authentication using HTML, CSS, PHP, and MySQL.
                 </li>
                 <li>
                   <span>Frontend Development</span><br />
@@ -156,19 +200,19 @@
 
 
 <!---work----1---->
-<div id="work"> <div class="container"> <h1 class="sub-title">My Work</h1> <div class="work-list"> <div class="work"> <img src="Images/Unishare.png" /> <div class="layer"> <h2>UniShare – University Resource Sharing Platform</h2> <p> A full-stack platform for sharing academic resources with role-based access. Built a responsive frontend using Next.js, React, Tailwind CSS, and a scalable backend with Nest.js, Node.js, and PostgreSQL to efficiently manage resources. </p> <a href="https://github.com/TonimaDristy/Full-Stack" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> </div> </div>
+<div id="work"> <div class="container"> <h1 class="sub-title">My Work</h1> <div class="work-list"> <div class="work"> <img src="Images/Unishare.png" /> <div class="layer"> <h2>UniShare – University Resource Sharing Platform</h2> <p> A full-stack platform for sharing academic resources with role-based access. Built a responsive frontend using Next.js, React, Tailwind CSS, and a scalable backend with Nest.js, Node.js, and PostgreSQL to efficiently manage resources. </p> <a href="https://www.linkedin.com/posts/tonima-dristy650_fullstackdevelopment-typescript-nestjs-ugcPost-7420757094708080640-9oFG?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> </div> </div>
     
 
 <!---work----2---->
           <div class="work">
-            <img src="Images/Eatup.jpeg" />
+            <img src="Images/schoolweb.jpg" />
             <div class="layer">
-              <h2>EatUp – Food Delivery App</h2>
+              <h2>Luminary – School web application</h2>
               <p>
                 
-A frontend food delivery application built with Next.js, React.js, and Tailwind CSS, featuring an interactive menu, Add to Cart functionality, cart management using local storage, order tracking, and a responsive UI/UX.
-              </p>
-              <a href="https://www.linkedin.com/posts/tonima-dristy650_excited-to-share-my-latest-project-eatup-activity-7412758175512408064-RMxw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+Developed a responsive Fullstack school management website with role-based login and PHP/MySQL
+backend for user authentication and admissions.</p>
+              <a href="https://github.com/TonimaDristy/School-Web" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
           </div>
 <!---work----3---->
@@ -226,8 +270,21 @@ A responsive travel booking web application built with React.js, Next.js, and Ta
             </div>
           </div>
 
-          
           <!---work----7---->
+          <div class="work hidden-work">
+            <img src="Images/Eatup.jpeg" />
+            <div class="layer">
+              <h2>EatUp – Food Delivery App</h2>
+              <p>
+                
+A frontend food delivery application built with Next.js, React.js, and Tailwind CSS, featuring an interactive menu, Add to Cart functionality, cart management using local storage, order tracking, and a responsive UI/UX.
+              </p>
+              <a href="https://www.linkedin.com/posts/tonima-dristy650_excited-to-share-my-latest-project-eatup-activity-7412758175512408064-RMxw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGJiCyAByfYldJjo8GpGkK_Diuy6aJjW3Zo" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+
+          
+          <!---work----8---->
           <div class="work hidden-work">
 
             <img src="Images/Data Science.jpeg" />
@@ -242,7 +299,7 @@ A responsive travel booking web application built with React.js, Next.js, and Ta
             </div>
           </div>
           
-          <!---work----8---->
+          <!---work----9---->
 <div class="work hidden-work">
             <img src="Images/Graphics.png" />
 
@@ -259,7 +316,7 @@ A responsive travel booking web application built with React.js, Next.js, and Ta
 
 
           
-          <!---work----9---->
+          <!---work----10---->
           <div class="work hidden-work">
             <img src="Images/cad.png" />
             <div class="layer">
@@ -273,7 +330,7 @@ A responsive travel booking web application built with React.js, Next.js, and Ta
             </div>
           </div>
           
-          <!---work----10---->
+          <!---work----11---->
           <div class="work hidden-work">
             <img src="Images/Gp 2.png" />
             <div class="layer">

@@ -18,16 +18,48 @@ body {
 }
 
 #header {
+
+
+
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+
     background-image: url(Images/Background.jpg);
     background-size: cover;
     background-position: center;
 
-    border: 6px solid rgba(3, 0, 28, 0.85);
+    border: 0px solid rgba(3, 0, 28, 0.85);
     box-sizing: border-box;
-    padding-top: 70px;
+    padding-top: 100px;
+
 }
+
+#header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    /* use same background image */
+    filter: blur(1px);
+    /* adjust blur amount */
+    transform: scale(1.05);
+    /* prevents edge clipping */
+    z-index: 0;
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+    width: 100%;
+    height: 102vh;
+
+}
+
+
+
 
 
 .container {
@@ -136,6 +168,7 @@ nav ul li a:hover::after {
     max-width: 380%;
     /* prevents overflow */
     height: auto;
+    margin-top: 75px;
 }
 
 
@@ -529,15 +562,15 @@ form .btn2 {
 
 
 
-.header-text h1 span {
+/* .header-text h1 span {
     background: linear-gradient(90deg, #000000, #ffffff);
-    /* dark left, light right */
+    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
-    /* allows animation to move gradient */
+    
     animation: gradientMove 3s linear infinite;
-}
+} */
 
 @keyframes gradientMove {
     0% {
@@ -754,4 +787,149 @@ nav ul li a:hover {
     /* emphasize active tab */
     color: #4181b5;
     /* blue highlight for active */
+}
+
+/* .intro-cards//////////////////// { position: absolute; top: 300%; right: 6%; display: grid; grid-template-columns: 1fr; gap: 20px; z-index: 5; } */
+.intro-card {
+    width: 350px;
+    /* wider for rectangle */
+    height: 160px;
+    /* set height */
+    padding: 20px 25px;
+    /* adjust padding */
+    border-radius: 12px;
+    /* slightly rounded corners */
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(21, 8, 34, 0.25);
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    transition: all 0.35s ease;
+    cursor: pointer;
+    /* floating animation */
+    animation: floatCard 4s ease-in-out infinite;
+}
+
+.intro-card h3 {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #ffffff;
+}
+
+.intro-card p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #e6e6f0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Hover effects */
+
+
+/* Floating animation keyframes */
+@keyframes floatCard {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Stagger animation for multiple cards */
+.intro-card:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.intro-card:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.intro-card:nth-child(3) {
+    animation-delay: 1s;
+}
+
+/* Small screens */
+@media (max-width: 900px) {
+    .intro-cards {
+        position: static;
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    .intro-card {
+        width: 100%;
+        max-width: 600px;
+        /* wider for small screens */
+        height: auto;
+        /* auto height */
+        margin: auto;
+        padding: 20px;
+    }
+}
+
+/* Hero section flex layout */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 5%;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+    /* for small screens */
+}
+
+/* Left: Header text */
+.header-text {
+    flex-basis: 55%;
+    color: white;
+}
+
+/* Right: Cards stack */
+.intro-cards {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    align-items: flex-end;
+    /* 🔥 pushes cards to right */
+}
+
+
+/* Small screens: stack vertically */
+@media (max-width: 900px) {
+    .header-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-text,
+    .intro-cards {
+        flex-basis: 100%;
+    }
+
+    .intro-cards {
+        margin-top: 30px;
+    }
+}
+
+
+.hero-intro {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    opacity: 0.95;
 }
