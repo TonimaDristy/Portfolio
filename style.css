@@ -20,9 +20,8 @@ body {
 #header {
 
 
-
     width: 100%;
-    height: 80vh;
+    height: 100vh;
 
     background-image: url(Images/Background.jpg);
     background-size: cover;
@@ -30,7 +29,7 @@ body {
 
     border: 0px solid rgba(3, 0, 28, 0.85);
     box-sizing: border-box;
-    padding-top: 100px;
+    padding-top: 75px;
 
 }
 
@@ -47,16 +46,6 @@ body {
     z-index: 0;
 }
 
-#header::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    z-index: 1;
-    width: 100%;
-    height: 102vh;
-
-}
 
 
 
@@ -64,6 +53,7 @@ body {
 
 .container {
     padding: 10px 5%;
+
 
 }
 
@@ -77,11 +67,16 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(3, 0, 28, 0.85);
+    background: rgba(24, 3, 65, 0.85);
     /* semi-transparent */
     padding: -3px 5%;
     z-index: 1000;
     backdrop-filter: blur(3px);
+
+
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, #19726b, #6b25cd) 1;
+
 
 }
 
@@ -182,16 +177,10 @@ nav ul li a:hover::after {
 
 }
 
-/* .sub-title {
-    font-size: 60px;
-    font-weight: 600;
-    color: rgb(15, 241, 38);
-
-} */
 
 .tab-titles {
     display: flex;
-    margin: 20px 0 40px;
+    margin: 10px 0 20px;
 }
 
 .tab-links {
@@ -202,17 +191,6 @@ nav ul li a:hover::after {
     position: relative;
 }
 
-
-/* .tab-links::after {
-    content: '';
-    width: 0;
-    height: 5px;
-    background: rgb(181, 65, 104);
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0, 5s;
-} */
 
 .tab-links.active-link::after {
     width: 50%;
@@ -225,8 +203,8 @@ nav ul li a:hover::after {
 
 /* skills */
 .tab-contents ul li span {
-    color: rgb(65, 129, 181);
-    font-size: 20px;
+    color: rgb(102, 55, 163);
+    font-size: 22px;
 }
 
 .tab-contents {
@@ -251,7 +229,7 @@ nav ul li a:hover::after {
 
 
 .services-list div {
-    background: #585656;
+    background: rgb(32, 31, 35);
     padding: 40px;
     font-size: 18px;
     font-weight: 300;
@@ -279,9 +257,17 @@ nav ul li a:hover::after {
     display: inline-block;
 }
 
+
 .services-list div:hover {
-    background: rgba(42, 42, 61, 0.85);
+    background-color: rgba(29, 8, 65, 0.85);
+    /* corrected syntax */
     transform: translateY(-8px);
+    border: 2px solid rgb(12, 69, 83);
+    /* border color */
+    transition: transform 0.3s, background-color 0.3s, border 0.3s;
+    /* smooth effect */
+    border-radius: 10px;
+    /* keep existing border radius */
 }
 
 /* ----------wokrs----- */
@@ -317,7 +303,7 @@ nav ul li a:hover::after {
 .layer {
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(3, 0, 28, 0.85), #00030a);
+    background: linear-gradient(rgb(43, 18, 107), #00030a);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -365,7 +351,7 @@ nav ul li a:hover::after {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid#0a63df;
+    border: 2px solid rgb(13, 84, 89);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -374,7 +360,7 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-    background: #4897D3;
+    background: rgb(43, 18, 107);
 }
 
 /* ------contact */
@@ -392,7 +378,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-    color: rgb(34, 34, 197);
+    color: rgb(117, 69, 237);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -405,20 +391,20 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: rgb(34, 34, 197);
+    color: rgb(103, 51, 235);
     display: inline-block;
     transition: transform 0.3s;
 }
 
 .social-icons a:hover {
-    color: #3282c5;
+    color: rgb(136, 107, 211);
     transform: translateY(-10px);
 
 }
 
 .btn.btn2 {
     display: inline-block;
-    background: #3282c5;
+    background: rgb(43, 18, 107);
 }
 
 .contact-right form {
@@ -462,13 +448,7 @@ form .btn2 {
     /* expands to show full text */
 }
 
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    color: #0024d9;
-    cursor: pointer;
-    font-weight: bold;
-}
+
 
 
 /* ---small screen--- */
@@ -479,12 +459,13 @@ form .btn2 {
 
     /* Move header text lower on phone screens */
     .header-text {
-        margin-top: 108%;
+        margin-top: 8%;
         /* increase this value to push text further down */
     }
 
     .header-text h1 {
-        font-size: 21px;
+        font-size: 15px;
+
         /* optional: make text smaller on phone */
     }
 
@@ -530,7 +511,7 @@ form .btn2 {
 
 /* Add border on hover for portfolio work images */
 .work:hover {
-    border: 3px solid rgb(65, 129, 181);
+    border: 3px solid rgb(31, 117, 118);
     /* change color as you like */
     border-radius: 18px;
     /* matches the existing border radius */
@@ -538,18 +519,6 @@ form .btn2 {
     /* smooth transition */
 }
 
-
-.services-list div:hover {
-    background-color: rgba(42, 42, 61, 0.85);
-    /* corrected syntax */
-    transform: translateY(-8px);
-    border: 3px solid rgb(65, 129, 181);
-    /* border color */
-    transition: transform 0.3s, background-color 0.3s, border 0.3s;
-    /* smooth effect */
-    border-radius: 10px;
-    /* keep existing border radius */
-}
 
 
 
@@ -559,18 +528,6 @@ form .btn2 {
     display: none;
 }
 
-
-
-
-/* .header-text h1 span {
-    background: linear-gradient(90deg, #000000, #ffffff);
-    
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    
-    animation: gradientMove 3s linear infinite;
-} */
 
 @keyframes gradientMove {
     0% {
@@ -588,13 +545,13 @@ form .btn2 {
     /* makes it behave like a box */
     padding: 1px 6px;
     /* space inside the box */
-    border: 2px solid rgb(33, 89, 134);
+    border: 2px solid rgb(74, 49, 187);
     /* border color */
     border-radius: 6px;
     /* rounded corners */
     background-color: rgba(189, 205, 217, 0.1);
     /* light box background */
-    color: rgb(42, 130, 201);
+    color: rgb(74, 49, 187);
     /* text color */
     font-weight: bold;
     text-align: center;
@@ -604,7 +561,7 @@ form .btn2 {
 }
 
 .read-more:hover {
-    background-color: rgb(41, 123, 189);
+    background-color: rgb(230, 244, 245);
     /* fill on hover */
     color: white;
     /* text color on hover */
@@ -634,11 +591,11 @@ nav ul li a::after {
 /*glass effect on projesct
  Hover box effect */
 nav ul li a:hover {
-    background: rgba(65, 129, 181, 0.15);
-    border-color: rgb(65, 129, 181);
+    background: rgba(21, 114, 125, 0.15);
+    border-color: #4b1780;
     color: #ffffff;
 
-    box-shadow: 0 0 10px rgba(65, 129, 181, 0.5);
+    box-shadow: 0 0 10px rgba(118, 232, 255, 0.5);
     transform: translateY(-2px);
 }
 
@@ -679,7 +636,7 @@ nav ul li a:hover {
     position: absolute;
     bottom: 15px;
     right: 15px;
-    background: rgba(52, 152, 198, 0.9);
+    background: rgba(73, 17, 177, 0.9);
     color: white;
     padding: 6px 14px;
     font-size: 13px;
@@ -688,6 +645,8 @@ nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
     opacity: 1;
+
+   
 }
 
 /* Hover effect */
@@ -698,7 +657,7 @@ nav ul li a:hover {
 
 /* Badge animation on hover */
 .work:hover::after {
-    background: rgb(65, 129, 181);
+    background: rgb(95, 33, 194);
     transform: translateY(-4px) scale(1.05);
 }
 
@@ -716,7 +675,7 @@ nav ul li a:hover {
     transform: scale(0.97);
 }
 
-/*SEE MORE ARROW*/
+/*SEE MORE ARROW/////////////SERVICE///*/
 .services-list div a {
     display: inline-flex;
     align-items: center;
@@ -724,7 +683,7 @@ nav ul li a:hover {
     margin-top: 23px;
     padding: 6px 14px;
     /* smaller padding */
-    background: rgba(54, 152, 243, 0.7);
+    background: rgb(25, 109, 113);
     /* soft blue */
     color: #ffffff;
     font-size: 13px;
@@ -748,7 +707,7 @@ nav ul li a:hover {
 /* Hover effect */
 .services-list div a:hover {
     transform: translateY(-1px) scale(1.03);
-    background: rgba(13, 108, 152, 0.9);
+    background: rgba(10, 62, 84, 0.9);
     box-shadow: 0 4px 12px rgba(254, 252, 253, 0.5);
 }
 
@@ -782,12 +741,7 @@ nav ul li a:hover {
     /* subtle light color */
 }
 
-.tab-titles .tab-links.active-link {
-    font-weight: 700;
-    /* emphasize active tab */
-    color: #4181b5;
-    /* blue highlight for active */
-}
+
 
 /* .intro-cards//////////////////// { position: absolute; top: 300%; right: 6%; display: grid; grid-template-columns: 1fr; gap: 20px; z-index: 5; } */
 .intro-card {
@@ -803,11 +757,11 @@ nav ul li a:hover {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(21, 8, 34, 0.25);
     color: #ffffff;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 5px 10px rgba(139, 80, 202, 0.35);
     transition: all 0.35s ease;
     cursor: pointer;
     /* floating animation */
-    animation: floatCard 4s ease-in-out infinite;
+    animation: floatCard 3s ease-in-out infinite;
 }
 
 .intro-card h3 {
@@ -824,7 +778,7 @@ nav ul li a:hover {
     text-overflow: ellipsis;
 }
 
-/* Hover effects */
+
 
 
 /* Floating animation keyframes */
@@ -840,6 +794,7 @@ nav ul li a:hover {
     100% {
         transform: translateY(0);
     }
+
 }
 
 /* Stagger animation for multiple cards */
@@ -859,13 +814,13 @@ nav ul li a:hover {
 @media (max-width: 900px) {
     .intro-cards {
         position: static;
-        margin-top: 40px;
+        margin-top: 0.5px;
         justify-content: center;
     }
 
     .intro-card {
-        width: 100%;
-        max-width: 600px;
+        width: 80%;
+        max-width: 400px;
         /* wider for small screens */
         height: auto;
         /* auto height */
@@ -919,8 +874,9 @@ nav ul li a:hover {
         flex-basis: 100%;
     }
 
+    /* /////////////////////////? */
     .intro-cards {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 }
 
@@ -928,8 +884,12 @@ nav ul li a:hover {
 .hero-intro {
     font-size: 36px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: #ffffff;
     letter-spacing: 1px;
     opacity: 0.95;
 }
+
+
+
+
