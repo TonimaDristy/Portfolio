@@ -22,8 +22,6 @@ About Me (Skills & Education Tabs)
 Services
 Projects / Portfolio
 Contact
-🎯 Purpose
 
-This project is designed to represent my personal brand, demonstrate my frontend and UI skills, and provide a centralized place to showcase my development work.
 
 🔗 [Live Demo](https://dristyportlio.netlify.app/)
