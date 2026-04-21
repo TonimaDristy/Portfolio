@@ -1,32 +1,38 @@
-🌐 Personal Portfolio Website
+# 🌐 Personal Portfolio Website
 
-🔗 [Live Demo](https://dristyportlio.netlify.app/)
+🔗 Live Demo: https://dristyportlio.netlify.app/
 
-A modern and responsive personal portfolio website built to showcase my projects, skills, and experience as a Computer Science & Engineering student.
+## 🚀 About
+A fully responsive personal portfolio website showcasing my projects, skills, and experience in full-stack development, AI, data science, and UI/UX design.
 
-This portfolio highlights my work in full-stack development, AI, data science, and UI/UX design, along with interactive sections for services, project demos, and contact.
+---
 
-🚀 Features
+## ✨ Features
+- Clean and responsive UI design
+- Interactive project showcase with hover effects
+- “See More / See Less” dynamic content
+- Smooth scrolling navigation
+- Contact form integrated with Google Sheets
+- Animated hero section with floating info cards
 
-Clean and responsive UI design
-Interactive project showcase with hover effects
-“See More / See Less” dynamic content
-Smooth scrolling navigation
-Contact form integrated with Google Sheets
-Animated hero section with floating info cards
+---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
+- HTML5  
+- CSS3 (Flexbox, Grid, Animations)  
+- JavaScript (DOM manipulation, event handling)  
+- Font Awesome  
 
-HTML5
-CSS3 (Flexbox, Grid, Animations)
-JavaScript (DOM manipulation, event handling)
-Font Awesome (icons)
-📂 Sections Included
-Home (Hero Section)
-About Me (Skills & Education Tabs)
-Services
-Projects / Portfolio
-Contact
+---
 
+## 📂 Sections
+- Home (Hero Section)  
+- About Me (Skills & Education Tabs)  
+- Services  
+- Projects / Portfolio  
+- Contact  
 
+---
 
+## 📬 Contact
+Feel free to connect via the contact form on the website.
