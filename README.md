@@ -34,5 +34,3 @@ A fully responsive personal portfolio website showcasing my projects, skills, an
 
 ---
 
-## 📬 Contact
-Feel free to connect via the contact form on the website.
