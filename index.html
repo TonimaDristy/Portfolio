@@ -30,6 +30,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#work">Works</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
@@ -151,20 +152,27 @@ Developed frontend websites using React.js, Next.js, and Tailwind CSS. </li>
       <!-- Service 1 -->
       <div>
         <i class="fa-solid fa-code"></i>
-        <h2>Web Development</h2>
+        <h2>Web Developer Internship</h2>
         <p class="service-text">
-          I build modern, scalable web applications from frontend to backend. I developed a full-stack university resource-sharing platform (UniShare) using Next.js, React.js, Nest.js, Node.js, PostgreSQL, and Tailwind CSS with responsive UI and role-based access. I also create frontend apps like Trip Planner, Movie Discovery, and EatUp, focusing on clean design, smooth navigation, and great user experience.
-        </p>
+          Completed a Web Development internship at D Huda Tech UK Limited where I built responsive 
+    and user-friendly interfaces and improved application performance. I collaborated with teams, 
+    fixed bugs through testing, and integrated AI APIs such as OpenAI, Gemini, and Hugging Face. 
+    I also worked on chatbot development, structured JSON datasets, and basic model fine-tuning 
+    while applying SEO strategies and designing UI assets.
+     </p>
         <a class="read-more">See more</a>
       </div>
 
       <!-- Service 2 -->
       <div>
         <i class="fa-solid fa-database"></i>
-        <h2>Data Science</h2>
+        <h2>Software Engineer Internship</h2>
         <p class="service-text">
-          Conducted exploratory data analysis on the Iris dataset using R by handling missing values, transforming variables, and manipulating data with dplyr. Built visualizations including scatter plots, histograms, box plots, and correlation matrices to identify patterns and relationships between sepal and petal measurements across different species, helping to better understand feature distribution and class separation.
-        </p>
+          Currently working as a Software Engineer Intern at Mustaruusu Technology Asia, contributing 
+    to API integration and backend development tasks. I collaborate using Git, debug issues, and 
+    develop responsive user interfaces using HTML, CSS, JavaScript, and React while gaining 
+    hands-on experience in real-world software development workflows.
+  </p>
         <a class="read-more">See more</a>
       </div>
 
@@ -347,6 +355,51 @@ A frontend food delivery application built with Next.js, React.js, and Tailwind 
 
       </div>
     </div>
+    <!-- ---------- CERTIFICATIONS ---------- -->
+<div id="certifications">
+  <div class="container">
+    <h1 class="sub-title">Certifications</h1>
+    <div class="services-list">
+
+      <!-- Certification 1 -->
+      <div>
+        <i class="fa-solid fa-certificate"></i>
+        <h2>AI Workshop</h2>
+        <p class="service-text">
+          Google Cloud • 2025 <br>
+          Completed hands-on training on AI tools, automation workflows, 
+          and system visualization using modern AI technologies.
+        </p>
+        <a href="#" class="read-more">See more</a>
+      </div>
+
+      <!-- Certification 2 -->
+      <div>
+        <i class="fa-solid fa-award"></i>
+        <h2>Web Development Internship Certificate</h2>
+        <p class="service-text">
+          Jan 2026 – April 2026 <br>
+          Earned certification for completing internship focused on frontend, backend, 
+          API integration, and real-world application development.
+        </p>
+        <a href="#" class="read-more">See more</a>
+        
+      </div>
+      <!-- Certification 3 -->
+    
+<div>
+  <i class="fa-solid fa-language"></i>
+  <h2>IELTS Masterclass</h2>
+  <p class="service-text">
+    Certificate of Participation <br>
+    Completed an IELTS Masterclass focused on improving English communication, 
+    academic writing, and speaking skills for professional and international environments.
+  </p>
+  <a href="#" class="read-more">See more</a>
+</div>
+    </div>
+  </div>
+</div>
 
     <!-- ---------- CONTACT ---------- -->
     <div id="Contact">
@@ -357,7 +410,7 @@ A frontend food delivery application built with Next.js, React.js, and Tailwind 
             <p><i class="fa-regular fa-message"></i> dristytonima@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i> 01767022650</p>
             <div class="social-icons">
-              <a href="https://www.linkedin.com/in/tonima-dristy/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/tonima-dristy650"><i class="fa-brands fa-linkedin"></i></a>
               <a href="https://github.com/TonimaDristy"><i class="fa-brands fa-github"></i></a>
               <a href="https://www.facebook.com/TI.Dristy.33"><i class="fa-brands fa-facebook"></i></a>
             </div>
@@ -376,59 +429,78 @@ A frontend food delivery application built with Next.js, React.js, and Tailwind 
     </div>
 
     <!-- ---------- SCRIPTS ---------- -->
-    <script>
-      // Tab switch
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-      function opentab(tabname) {
-        for (tablink of tablinks) tablink.classList.remove("active-link");
-        for (tabcontent of tabcontents) tabcontent.classList.remove("active-tab");
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-
-      // Google sheet form submit
-      const scriptURL = "https://script.google.com/macros/s/AKfycbzll7wOMtERJa3chSrx1oNG6esgJyNNa2ekK2juxh5JeVy5JYKEo-L83sqExyCi5eTZkw/exec";
-      const form = document.forms["submit-to-google-sheet"];
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => console.log("Success!", response))
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
-   <script>
-document.querySelectorAll(".read-more").forEach(button => {
-  button.addEventListener("click", () => {
-    const paragraph = button.previousElementSibling; // the <p> above
-    paragraph.classList.toggle("expanded");
-    button.textContent = paragraph.classList.contains("expanded") ? "See less" : "See more";
-  });
-});
-</script>
+    <!-- ---------- SCRIPTS ---------- -->
 <script>
-  const btn = document.getElementById("show-more-btn");
+  // ---------- TAB SWITCH ----------
+  const tablinks = document.getElementsByClassName("tab-links");
+  const tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname, event) {
+    for (let tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+
+    for (let tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  // ---------- GOOGLE SHEET FORM ----------
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbzll7wOMtERJa3chSrx1oNG6esgJyNNa2ekK2juxh5JeVy5JYKEo-L83sqExyCi5eTZkw/exec";
+
+  const form = document.forms["submit-to-google-sheet"];
+
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: new FormData(form),
+      })
+        .then(() => alert("Message sent successfully!"))
+        .catch((error) => console.error("Error!", error.message));
+    });
+  }
+
+  // ---------- READ MORE BUTTON (FIXED) ----------
+  document.querySelectorAll(".read-more").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const text = btn.previousElementSibling;
+
+      if (!text) return;
+
+      text.classList.toggle("expanded");
+
+      btn.textContent = text.classList.contains("expanded")
+        ? "See less"
+        : "See more";
+    });
+  });
+
+  // ---------- SHOW MORE WORKS ----------
+  const showMoreBtn = document.getElementById("show-more-btn");
   const hiddenWorks = document.querySelectorAll(".hidden-work");
 
-  btn.addEventListener("click", function(e) {
-    e.preventDefault(); // prevent page jump
+  if (showMoreBtn) {
+    showMoreBtn.addEventListener("click", (e) => {
+      e.preventDefault();
 
-    hiddenWorks.forEach(work => {
-      work.style.display = "block"; // show hidden works
+      hiddenWorks.forEach((work) => {
+        work.style.display = "block";
+      });
+
+      showMoreBtn.style.display = "none";
     });
-
-    btn.style.display = "none"; // hide the "See more" button after click
-  });
+  }
 </script>
-
-
-
-
-
-
-
-
-
 
   </body>
 </html>
+ 
